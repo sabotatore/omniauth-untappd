@@ -1,6 +1,6 @@
 # Omniauth::Untappd
 
-[![Build Status](https://travis-ci.org/sabotatore/omniauth-untappd.png)](https://travis-ci.org/sabotatore/omniauth-untappd)
+[![Build Status](https://travis-ci.org/sabotatore/omniauth-untappd.png)](https://travis-ci.org/sabotatore/omniauth-untappd) [![Code Climate](https://codeclimate.com/github/sabotatore/omniauth-untappd.png)](https://codeclimate.com/github/sabotatore/omniauth-untappd)
 
 Untappd OAuth2 Strategy for OmniAuth.
 
