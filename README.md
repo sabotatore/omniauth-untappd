@@ -8,7 +8,7 @@ Untappd OAuth2 Strategy for OmniAuth.
 
 Add to your `Gemfile`:
 
-    gem 'omniauth-untappd', github: 'sabotatore/omniauth-untappd'
+    gem 'omniauth-untappd'
 
 And then execute:
 
