@@ -72,9 +72,15 @@ module OAuth2
     def get_token(params, access_token_opts={}, access_token_class = AccessToken)
       opts = { raise_errors: options[:raise_errors], parse: params.delete(:parse), params: params }
       response = request(options[:token_method], token_url, opts)
-      untappd_response = response.parsed['response']
-      raise Error.new(response) if options[:raise_errors] && !(untappd_response.is_a?(Hash) && untappd_response['access_token'])
-      access_token_class.from_hash(self, untappd_response.merge(access_token_opts))
+      access_token_class.new(self, parse_token(response), access_token_opts)
+    end
+
+    private
+
+    def parse_token(response)
+      access_token = response.parsed.is_a?(Hash) && response.parsed['response']['access_token']
+      raise Error.new(response) if options[:raise_errors] && !access_token
+      access_token
     end
   end
 end
