@@ -6,6 +6,7 @@ require 'rspec'
 require 'rack/test'
 require 'webmock/rspec'
 require 'omniauth'
+require 'oauth2'
 require 'omniauth-untappd'
 
 RSpec.configure do |config|
