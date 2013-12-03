@@ -2,7 +2,7 @@
 
 Untappd OAuth2 Strategy for OmniAuth.
 
-[![Gem Version](https://badge.fury.io/rb/omniauth-untappd.png)](http://badge.fury.io/rb/omniauth-untappd)
+[![Gem Version](https://badge.fury.io/rb/omniauth-untappd.png)](http://badge.fury.io/rb/omniauth-untappd) [![Dependency Status](https://gemnasium.com/sabotatore/omniauth-untappd.png)](https://gemnasium.com/sabotatore/omniauth-untappd)
 
 ## Installation
 
