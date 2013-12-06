@@ -25,6 +25,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rack-test'
   gem.add_development_dependency 'webmock'
   gem.add_development_dependency 'simplecov'
-  gem.add_development_dependency 'simplecov-sublime-ruby-coverage'
   gem.add_development_dependency 'coveralls'
 end
