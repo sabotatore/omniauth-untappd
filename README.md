@@ -1,7 +1,7 @@
 # Omniauth::Untappd
 
 [![Gem Version](https://badge.fury.io/rb/omniauth-untappd.png)](http://badge.fury.io/rb/omniauth-untappd)
-[![Build Status](https://travis-ci.org/sabotatore/omniauth-untappd.png)](https://travis-ci.org/sabotatore/omniauth-untappd)
+[![Build Status](https://travis-ci.org/sabotatore/omniauth-untappd.png?branch=master)](https://travis-ci.org/sabotatore/omniauth-untappd)
 [![Dependency Status](https://gemnasium.com/sabotatore/omniauth-untappd.png)](https://gemnasium.com/sabotatore/omniauth-untappd)
 [![Code Climate](https://codeclimate.com/github/sabotatore/omniauth-untappd.png)](https://codeclimate.com/github/sabotatore/omniauth-untappd)
 [![Coverage Status](https://coveralls.io/repos/sabotatore/omniauth-untappd/badge.png)](https://coveralls.io/r/sabotatore/omniauth-untappd)
@@ -36,7 +36,7 @@ See more details on the omniauth module: https://github.com/intridea/omniauth#re
 
 OmniAuth Untappd is tested under 1.9.2, 1.9.3 and 2.0.0
 
-[![Build Status](https://travis-ci.org/sabotatore/omniauth-untappd.png)](https://travis-ci.org/sabotatore/omniauth-untappd)
+[![Build Status](https://travis-ci.org/sabotatore/omniauth-untappd.png?branch=master)](https://travis-ci.org/sabotatore/omniauth-untappd)
 
 ## License
 
