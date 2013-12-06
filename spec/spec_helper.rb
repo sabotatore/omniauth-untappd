@@ -5,7 +5,6 @@ require 'simplecov'
 require 'coveralls'
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
   SimpleCov::Formatter::HTMLFormatter,
-  SimpleCov::Formatter::SublimeRubyCoverageFormatter,
   Coveralls::SimpleCov::Formatter
 ]
 SimpleCov.start
