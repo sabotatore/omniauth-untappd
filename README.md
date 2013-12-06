@@ -1,12 +1,12 @@
 # Omniauth::Untappd
 
-Untappd OAuth2 Strategy for OmniAuth.
-
 [![Gem Version](https://badge.fury.io/rb/omniauth-untappd.png)](http://badge.fury.io/rb/omniauth-untappd)
 [![Build Status](https://travis-ci.org/sabotatore/omniauth-untappd.png)](https://travis-ci.org/sabotatore/omniauth-untappd)
 [![Dependency Status](https://gemnasium.com/sabotatore/omniauth-untappd.png)](https://gemnasium.com/sabotatore/omniauth-untappd)
 [![Code Climate](https://codeclimate.com/github/sabotatore/omniauth-untappd.png)](https://codeclimate.com/github/sabotatore/omniauth-untappd)
 [![Coverage Status](https://coveralls.io/repos/sabotatore/omniauth-untappd/badge.png)](https://coveralls.io/r/sabotatore/omniauth-untappd)
+
+Untappd OAuth2 Strategy for OmniAuth.
 
 ## Installation
 
