@@ -3,6 +3,9 @@ require 'spec_helper'
 describe OmniAuth::Strategies::Untappd do
   subject(:strategy) { OmniAuth::Strategies::Untappd.new('client_id', 'client_secret') }
 
+  before { OmniAuth.config.test_mode = true }
+  after { OmniAuth.config.test_mode = false }
+
   let(:parsed_response) {{ 'response' => {
                              'user' => {
                                'id' => '123',
@@ -36,7 +39,23 @@ describe OmniAuth::Strategies::Untappd do
 
       its(:parse) { should eql :json }
     end
+  end
 
+  describe 'add redirect_url to params' do
+    let(:callback_url) { 'callback_url' }
+    before { expect(strategy).to receive(:callback_url).and_return(callback_url) }
+
+    context '#token_params' do
+      subject { strategy.token_params }
+
+      its(:redirect_url) { should eql callback_url }
+    end
+
+    context '#authorize_params' do
+      subject { strategy.authorize_params }
+
+      its(:redirect_url) { should eql callback_url }
+    end
   end
 
   context '#raw_info' do
@@ -46,7 +65,7 @@ describe OmniAuth::Strategies::Untappd do
     let(:user_info_url) { 'http://api.untappd.com/v4/user/info' }
 
     before { strategy.stub(access_token: access_token) }
-    before { access_token.should_receive(:get).with(user_info_url).and_return(response) }
+    before { expect(access_token).to receive(:get).with(user_info_url).and_return(response) }
 
     it { should eql(parsed_response['response']['user']) }
 
