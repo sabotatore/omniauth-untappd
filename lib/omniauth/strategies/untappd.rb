@@ -1,4 +1,5 @@
-require 'omniauth-oauth2'
+require 'omniauth/strategies/oauth2'
+require 'oauth2/untappd_client'
 
 module OmniAuth
   module Strategies
