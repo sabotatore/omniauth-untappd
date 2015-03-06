@@ -12,7 +12,7 @@ describe OmniAuth::Strategies::Untappd do
                                'first_name' => 'John',
                                'last_name' => 'Doe',
                                'user_name' => 'john_doe',
-                               'untappd_url' => 'http://untappd.com/user/john_doe',
+                               'untappd_url' => 'https://untappd.com/user/john_doe',
                                'settings' => {
                                  'email_address' => 'john@doe'
                                }
@@ -62,7 +62,7 @@ describe OmniAuth::Strategies::Untappd do
     subject { strategy.raw_info }
     let(:access_token) { double('AccessToken', options: {}) }
     let(:response) { double('Response', parsed: parsed_response) }
-    let(:user_info_url) { 'http://api.untappd.com/v4/user/info' }
+    let(:user_info_url) { 'https://api.untappd.com/v4/user/info' }
 
     before { strategy.stub(access_token: access_token) }
     before { expect(access_token).to receive(:get).with(user_info_url).and_return(response) }
@@ -81,7 +81,7 @@ describe OmniAuth::Strategies::Untappd do
       it { expect(info[:name]).to eql 'John Doe' }
       it { expect(info[:nickname]).to eql 'john_doe' }
       it { expect(info[:email]).to eql 'john@doe' }
-      it { expect(info[:urls]['Untappd']).to eql 'http://untappd.com/user/john_doe' }
+      it { expect(info[:urls]['Untappd']).to eql 'https://untappd.com/user/john_doe' }
     end
 
     context '#extra' do
