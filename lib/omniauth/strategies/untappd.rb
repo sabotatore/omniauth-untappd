@@ -56,7 +56,7 @@ module OmniAuth
       def raw_info
         access_token.options[:mode] = :query
         access_token.options[:param_name] = :access_token
-        @raw_info ||= access_token.get('http://api.untappd.com/v4/user/info').parsed['response']['user']
+        @raw_info ||= access_token.get('https://api.untappd.com/v4/user/info').parsed['response']['user']
       end
 
       private
